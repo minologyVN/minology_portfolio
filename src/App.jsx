@@ -1,3 +1,9 @@
+import { Header } from "./components/Header";
+
 export const App = () => {
-  return <div>Minology Porfolio</div>;
+  return (
+    <div className="font-base px-16">
+      <Header />
+    </div>
+  );
 };
