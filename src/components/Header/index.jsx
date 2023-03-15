@@ -1,11 +1,11 @@
 import { Logo } from "../Logo";
-import { Navbar } from "../Navbar";
+import { SocialMedia } from "../Header/SocialMedia";
 
 export const Header = () => {
   return (
-    <header className="flex items-center justify-between">
+    <header className="fixed border-2 inset-x-0 top-0 h-20 flex items-center justify-between mx-16">
       <Logo />
-      <Navbar />
+      <SocialMedia />
     </header>
   );
 };
