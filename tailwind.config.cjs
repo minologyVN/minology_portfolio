@@ -9,6 +9,8 @@ module.exports = {
       colors: {
         primary: "#0C0C0C",
         secondary: "#252429",
+        white: "#FFF",
+        "white-opacity": "rgba(255, 255, 255, 0.2)",
       },
       screens: {
         sm: "640px",
