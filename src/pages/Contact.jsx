@@ -1,3 +1,5 @@
+import { ContainerFull } from "../components/common/ContainerFull";
+
 export const Contact = () => {
-  return <div>Contact</div>;
+  return <ContainerFull>Contact</ContainerFull>;
 };

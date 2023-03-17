@@ -4,7 +4,7 @@ export const Logo = () => {
       <div className="w-10 h-10 object-fit">
         <img src="/cherry_blossom.png" alt="logo" className="w-full h-full" />
       </div>
-      <h3>Minology</h3>
+      <h3>XXXX</h3>
     </div>
   );
 };

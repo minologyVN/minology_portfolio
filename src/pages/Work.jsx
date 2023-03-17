@@ -1,3 +1,5 @@
+import { ContainerFull } from "../components/common/ContainerFull";
+
 export const Work = () => {
-  return <div>Work</div>;
+  return <ContainerFull>Work</ContainerFull>;
 };

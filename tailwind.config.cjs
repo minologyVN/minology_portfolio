@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       base: ["Poppins", "sans-serif"],
+      title: ["Quicksand", "sans-serif"],
     },
     extend: {
       colors: {
@@ -11,7 +12,7 @@ module.exports = {
         secondary: "#252429",
         blue: "#0f33ff",
         white: "#FFF",
-        "white-opacity": "rgba(255, 255, 255, 0.2)",
+        "white-opacity": "rgba(255, 255, 255, 0.1)",
       },
       screens: {
         sm: "640px",

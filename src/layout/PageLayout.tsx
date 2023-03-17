@@ -1,5 +1,5 @@
 import React from "react";
 
 export const PageLayout = ({ children }) => {
-  return <div>{children}</div>;
+  return <div className="h-full">{children}</div>;
 };

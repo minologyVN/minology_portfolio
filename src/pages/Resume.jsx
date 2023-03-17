@@ -1,3 +1,5 @@
+import { ContainerFull } from "../components/common/ContainerFull";
+
 export const Resume = () => {
-  return <div>Resume</div>;
+  return <ContainerFull>Resume</ContainerFull>;
 };
