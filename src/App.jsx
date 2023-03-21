@@ -1,14 +1,11 @@
-import { Header } from "./components/Header";
-import { VerticalNavbar } from "./components/Navbar/VerticalNavbar";
+import { AppLayout } from "./layout/AppLayout";
 import { Routes, Route, Outlet, Navigate } from "react-router-dom";
 import { Home, Contact, Skill, Work, Resume } from "./pages";
 import { PageLayout } from "./layout/PageLayout";
 
 export const App = () => {
   return (
-    <div className="relative h-full font-base max-w-page pt-20 pb-10">
-      <Header />
-      <VerticalNavbar />
+    <AppLayout>
       <Routes>
         <Route
           path="/"
@@ -26,6 +23,6 @@ export const App = () => {
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
-    </div>
+    </AppLayout>
   );
 };

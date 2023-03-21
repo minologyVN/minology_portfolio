@@ -1,16 +1,15 @@
 export const PAGE_STEP = ["HOME", "SKILL", "WORK", "RESUME", "CONTACT"];
 
-export const PAGE_STEP_ENUM = PAGE_STEP.map((it, index) => {
-  return {
-    [it]: index,
-  };
-});
+export const PAGE_STEP_ENUM = PAGE_STEP.reduce((result, currentItem, index) => {
+  result[currentItem] = index;
+  return result;
+}, {});
 
 export const PAGE_STEP_PATH_MAP = PAGE_STEP.reduce((result, currentValue) => {
-  result.set(currentValue, `/${currentValue.toLowerCase()}`);
+  result.set(`/${currentValue.toLowerCase()}`, currentValue);
   return result;
 }, new Map());
 
-export const getStepByPath = (pathname) => {
-  return [...PAGE_STEP_PATH_MAP].find(([key, val]) => val == pathname)[0];
+export const getPathByStep = (step) => {
+  return `/${step.toLowerCase()}`;
 };
