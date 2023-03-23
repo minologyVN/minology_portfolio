@@ -5,6 +5,18 @@ module.exports = {
     fontFamily: {
       base: ["Poppins", "sans-serif"],
       title: ["Quicksand", "sans-serif"],
+      heading: ["Montserrat", "sans-serif"],
+    },
+    fontSize: {
+      xxl: "3.25rem",
+      xl: "2.25rem",
+      h1: "1.75rem",
+      h2: "1.5rem",
+      h3: "1.25rem",
+      base: "1rem",
+      sm: "0.875rem",
+      xs: "0.75rem",
+      xxs: "0.625rem",
     },
     extend: {
       colors: {
@@ -21,6 +33,13 @@ module.exports = {
         xl: "1440px",
         "2xl": "1920px",
       },
+      fontWeight: {
+        regular: "400",
+        medium: "500",
+        semibold: "600",
+        bold: "700",
+        extraBold: "800",
+      },
       zIndex: {
         tooltip: "1300",
         popover: "1200",
@@ -32,6 +51,7 @@ module.exports = {
         fixed: "10",
         window: "0",
         default: "0",
+        below: "-1",
       },
     },
   },

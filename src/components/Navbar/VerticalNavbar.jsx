@@ -1,7 +1,7 @@
 import React, { useCallback } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import tw from "twin.macro";
-import { PAGE_STEP, PAGE_STEP_PATH_MAP } from "../../constants";
+import { PAGE_STEP, PAGE_STEP_PATH_MAP, getPathByStep } from "../../constants";
 import { NavbarDot } from "./NavbarDot";
 import { useGlobalWheelEvent } from "../../hooks";
 
@@ -10,6 +10,7 @@ const DotList = tw.ul`absolute left-1/2 -translate-x-1/2 flex flex-col justify-a
 
 export const VerticalNavbar = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   useGlobalWheelEvent();
 
   const isDotActiveByStep = useCallback(
@@ -17,6 +18,14 @@ export const VerticalNavbar = () => {
       return PAGE_STEP_PATH_MAP.get(location.pathname) === step;
     },
     [location.pathname]
+  );
+
+  const handleNavDotClick = useCallback(
+    (step) => {
+      const pathName = getPathByStep(step);
+      navigate(pathName);
+    },
+    [navigate]
   );
 
   return (
@@ -29,6 +38,7 @@ export const VerticalNavbar = () => {
               step={step}
               index={index}
               isActive={isDotActiveByStep(step)}
+              onClick={() => handleNavDotClick(step)}
             />
           );
         })}

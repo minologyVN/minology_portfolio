@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 import tw, { styled } from "twin.macro";
 import { motion } from "framer-motion";
 
-export const NavbarDot = ({ isActive, index, step }) => {
+export const NavbarDot = ({ isActive, index, step, onClick }) => {
   return (
-    <DotItem key={step} isActive={isActive}>
+    <DotItem key={step} isActive={isActive} onClick={onClick}>
       {isActive ? (
         <motion.div
           initial={{ opacity: 0 }}
@@ -30,7 +30,7 @@ export const NavbarDot = ({ isActive, index, step }) => {
 
 /* Styles */
 const DotItem = styled.li(({ isActive }) => [
-  tw`w-[3px] h-[3px] bg-white relative font-bold tracking-widest`,
+  tw`w-[3px] h-[3px] bg-white relative font-bold tracking-widest cursor-pointer`,
   isActive && tw`bg-blue`,
 ]);
 
@@ -39,4 +39,5 @@ NavbarDot.propTypes = {
   isActive: PropTypes.bool,
   step: PropTypes.string,
   index: PropTypes.number,
+  onClick: PropTypes.func,
 };

@@ -1,9 +1,9 @@
 import About from "./About";
 import {
-	EarthCanvas,
-	BallCanvas,
-	ComputersCanvas,
-	StarsCanvas,
+  EarthCanvas,
+  BallCanvas,
+  AstronautCanvas,
+  StarsCanvas,
 } from "./canvas";
 import Contact from "./Contact";
 import Experience from "./Experience";
@@ -13,15 +13,15 @@ import Tech from "./Tech";
 import Works from "./Works";
 
 export {
-	Hero,
-	About,
-	Tech,
-	Experience,
-	Works,
-	Feedbacks,
-	Contact,
-	EarthCanvas,
-	BallCanvas,
-	ComputersCanvas,
-	StarsCanvas,
+  Hero,
+  About,
+  Tech,
+  Experience,
+  Works,
+  Feedbacks,
+  Contact,
+  EarthCanvas,
+  BallCanvas,
+  AstronautCanvas,
+  StarsCanvas,
 };
