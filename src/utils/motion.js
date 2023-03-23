@@ -100,3 +100,16 @@ export const fadeWithDownDirection = (
     transition: { ease: transitionType, duration, type, delay },
   };
 };
+
+export const floatAnimation = () => {
+  return {
+    initial: { y: -10 },
+    animate: { y: 10 },
+    transition: {
+      repeat: "Infinity",
+      repeatType: "mirror",
+      ease: "linear",
+      duration: 2,
+    },
+  };
+};
