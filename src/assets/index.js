@@ -28,6 +28,7 @@ import tripguide from "./tripguide.png";
 import web from "./web.png";
 import home_background from "./home_background.png";
 import home_visual from "./home_visual.png";
+import avatar_visual from "./avatar_visual.png";
 
 export {
   logo,
@@ -60,4 +61,5 @@ export {
   tripguide,
   home_background,
   home_visual,
+  avatar_visual,
 };

@@ -4,7 +4,7 @@ import { ContainerFull } from "../components/common/ContainerFull";
 import { useWheelDirectionReceive } from "../hooks/useWheelDirectionReceive";
 import { fadeWithDownDirection, floatAnimation } from "../utils";
 import { ReactComponent as SvgRightArrow } from "../assets/svg/right-arrow.svg";
-import { home_visual } from "../assets";
+import { avatar_visual } from "../assets";
 
 const ButtonHoverEffect = styled.button(() => [
   tw`flex items-center gap-4 overflow-hidden py-2 px-4 rounded relative`,
@@ -46,7 +46,7 @@ export const Home = () => {
             <div className="absolute inset-y-0 right-0 pt-20">
               <motion.div {...floatAnimation()} className="w-full h-full">
                 <img
-                  src={home_visual}
+                  src={avatar_visual}
                   alt="home-canvas"
                   className="w-full h-full object-cover"
                 />
