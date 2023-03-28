@@ -29,6 +29,7 @@ import web from "./web.png";
 import home_background from "./home_background.png";
 import home_visual from "./home_visual.png";
 import avatar_visual from "./avatar_visual.png";
+import cat_visual from "./cat_visual.png";
 
 export {
   logo,
@@ -62,4 +63,5 @@ export {
   home_background,
   home_visual,
   avatar_visual,
+  cat_visual,
 };

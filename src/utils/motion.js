@@ -103,8 +103,8 @@ export const fadeWithDownDirection = (
 
 export const floatAnimation = () => {
   return {
-    initial: { y: -10 },
-    animate: { y: 10 },
+    initial: { y: -20 },
+    animate: { y: 20 },
     transition: {
       repeat: "Infinity",
       repeatType: "mirror",
