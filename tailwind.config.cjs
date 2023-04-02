@@ -41,6 +41,7 @@ module.exports = {
         extraBold: "800",
       },
       zIndex: {
+        nav: "2000",
         tooltip: "1300",
         popover: "1200",
         backdrop: "1100",

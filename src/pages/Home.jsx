@@ -63,13 +63,13 @@ export const Home = () => {
                   >
                     <DistortionSphere />
                   </Canvas>
-                  {/* <div className="absolute inset-0 pointer-events-none">
-                  <img
-                    src={avatar_visual}
-                    alt="home-canvas"
-                    className="w-full h-full object-cover rounded-full scale-[0.4] md:scale-[0.6] lg:scale-[0.7] 2xl:scale-75"
-                  />
-                </div> */}
+                  <div className="absolute left-0 top-1/2 -translate-y-1/2 pointer-events-none w-full overflow-hidden">
+                    <img
+                      src={avatar_visual}
+                      alt="home-canvas"
+                      className="w-full h-full object-cover rounded-full scale-[0.4] md:scale-[0.6] lg:scale-[0.7] 2xl:scale-75"
+                    />
+                  </div>
                 </motion.div>
               </div>
             ) : (
