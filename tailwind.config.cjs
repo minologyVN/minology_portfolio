@@ -30,6 +30,7 @@ module.exports = {
         sm: "640px",
         md: "768px",
         lg: "1024px",
+        elg: "1200px",
         xl: "1440px",
         "2xl": "1920px",
       },
@@ -41,6 +42,7 @@ module.exports = {
         extraBold: "800",
       },
       zIndex: {
+        nav: "2000",
         tooltip: "1300",
         popover: "1200",
         backdrop: "1100",
