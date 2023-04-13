@@ -37,7 +37,7 @@ export const Home = () => {
       className="h-full w-full"
     >
       <ContainerFull className="relative flex items-center justify-center">
-        <div className="flex flex-col w-full h-full px-4 md:ml-64 md:mr-48 md:pl-8">
+        <div className="flex flex-col w-full h-full px-4 md:ml-64 md:mr-48 md:pl-10">
           <section className="relative flex items-center justify-center basis-1/3 border-b-2 gap-2 border-white-opacity border-solid md:justify-center md:basis-2/3 xl:mx-24">
             <div className="w-full md:w-1/2 sm:ml-5 lg:ml-20">
               <div className="w-full mb-8 font-heading font-extraBold capitalize tracking-widest">

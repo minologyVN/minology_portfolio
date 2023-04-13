@@ -6,8 +6,9 @@ import { NavbarDot } from "./NavbarDot";
 import { useGlobalWheelEvent } from "../../hooks";
 
 const NavContainer = styled.nav(() => [
-  tw`hidden`,
-  tw`md:block md:absolute md:inset-x-0 md:top-1/2 md:-translate-y-1/2 md:h-[70%] md:bg-white-opacity md:w-[2px] md:font-title z-nav`,
+  tw`hidden z-nav bg-white-opacity h-[70%] font-title w-[2px] absolute`,
+  tw`md:top-1/2 md:-translate-y-1/2 lg:block`,
+  tw`exl:inset-x-0 lg:inset-x-14 inset-x-4`,
 ]);
 const DotList = tw.ul`absolute left-1/2 -translate-x-1/2 flex flex-col justify-around h-full`;
 
