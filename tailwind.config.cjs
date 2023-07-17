@@ -6,6 +6,7 @@ module.exports = {
       base: ["Poppins", "sans-serif"],
       title: ["Quicksand", "sans-serif"],
       heading: ["Montserrat", "sans-serif"],
+      logo: ["Quantico", "sans-serif"],
     },
     fontSize: {
       xxl: "3.25rem",

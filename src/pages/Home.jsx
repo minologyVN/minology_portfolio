@@ -42,11 +42,11 @@ export const Home = () => {
             <div className="w-full md:w-1/2 sm:ml-5 lg:ml-20">
               <div className="w-full mb-8 font-heading font-extraBold capitalize tracking-widest">
                 <HomeHeading>
-                  <b className="text-h2">Ri! O Om</b>
-                  <b className="text-h1">AAAAAAAAA</b>
+                  <b className="text-h2">Hi! I im</b>
+                  <b className="text-h1">Minology</b>
                 </HomeHeading>
                 <h3 className="text-h2 mt-8 break-words leading-8">
-                  AAAAAAAAAAAAAAAAAAAAAA
+                  A Front End Developer
                 </h3>
               </div>
               <ButtonHoverEffect onClick={handleToContactPage}>

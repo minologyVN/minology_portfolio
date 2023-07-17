@@ -26,7 +26,6 @@ export const VerticalNavbar = () => {
 
   const handleNavDotClick = useCallback(
     (step) => {
-      console.log("abc");
       const pathName = getPathByStep(step);
       navigate(pathName);
     },
