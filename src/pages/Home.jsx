@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { ContainerFull } from "../components/common/ContainerFull";
 import { useWheelDirectionReceive } from "../hooks/useWheelDirectionReceive";
 import { fadeWithDownDirection } from "../utils";
-import { DistortionSphere } from "../components/3D/DistortionSphere";
 import { HomePersonality } from "../components/Home/components/HomePersonality";
 import { HomeOverview } from "../components/Home/components/HomeOverview";
 
