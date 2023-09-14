@@ -32,6 +32,7 @@ module.exports = {
         lg: "1024px",
         elg: "1200px",
         xl: "1440px",
+        exl: "1600px",
         "2xl": "1920px",
       },
       fontWeight: {

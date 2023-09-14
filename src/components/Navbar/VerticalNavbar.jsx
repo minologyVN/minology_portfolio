@@ -6,8 +6,9 @@ import { NavbarDot } from "./NavbarDot";
 import { useGlobalWheelEvent } from "../../hooks";
 
 const NavContainer = styled.nav(() => [
-  tw`hidden z-nav`,
-  tw`elg:block elg:absolute elg:inset-x-0 elg:top-1/2 elg:-translate-y-1/2 elg:h-[70%] elg:bg-white-opacity elg:w-[2px] elg:font-title `,
+  tw`hidden z-nav bg-white-opacity h-[70%] font-title w-[2px] absolute`,
+  tw`md:top-1/2 md:-translate-y-1/2 lg:block`,
+  tw`exl:inset-x-0 lg:inset-x-14 inset-x-4`,
 ]);
 const DotList = tw.ul`absolute left-1/2 -translate-x-1/2 flex flex-col justify-around h-full`;
 
@@ -25,6 +26,7 @@ export const VerticalNavbar = () => {
 
   const handleNavDotClick = useCallback(
     (step) => {
+      console.log("abc");
       const pathName = getPathByStep(step);
       navigate(pathName);
     },
