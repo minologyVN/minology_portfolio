@@ -36,19 +36,34 @@ export const HomeOverview = () => {
       {isSphereShow ? (
         <div className="relative w-1/2 h-full hidden md:block">
           <motion.div {...floatAnimation()} className="w-full h-full">
-            <Canvas
+            <motion.div
+              animate={{
+                scale: [1, 1.3, 1.3, 1, 1],
+                rotate: [0, 0, 270, 320, 360],
+                borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+              }}
+              transition={{
+                ease: "linear",
+                duration: 1.5,
+              }}
+              className="bg-white relative left-0 top-1/2 -translate-y-1/2 -translate-x-1/2"
+            >
+              {/* <Canvas
               camera={{ fov: 25, position: [5, 5, 5] }}
               className="absolute inset-0"
-            >
+              >
               <DistortionSphere />
-            </Canvas>
-            <div className="absolute left-0 top-1/2 -translate-y-1/2 pointer-events-none w-full overflow-hidden">
-              <img
-                src={avatar_visual}
-                alt="home-canvas"
-                className="w-full h-full object-cover rounded-full scale-[0.4] md:scale-[0.6] lg:scale-[0.7] 2xl:scale-75"
-              />
-            </div>
+            </Canvas> */}
+
+              <div className="absolute w-[300px] h-[300px] left-1/2 top-1/2 -translate-x-1/2 bg-blue shadow-avatar -translate-y-1/2 rounded-full"></div>
+              <div className="absolute left-0 top-1/2 -translate-y-1/2 pointer-events-none w-full overflow-hidden">
+                <img
+                  src={avatar_visual}
+                  alt="home-canvas"
+                  className="w-full h-full object-cover rounded-full scale-[0.4] md:scale-[0.6] lg:scale-[0.7] 2xl:scale-75"
+                />
+              </div>
+            </motion.div>
           </motion.div>
         </div>
       ) : (

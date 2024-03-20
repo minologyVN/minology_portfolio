@@ -20,6 +20,9 @@ module.exports = {
       xxs: "0.625rem",
     },
     extend: {
+      boxShadow: {
+        avatar: "0 0 15px 15px rgba(15,51,255,0.7)",
+      },
       colors: {
         primary: "#0C0C0C",
         secondary: "#252429",
